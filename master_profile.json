@@ -1,0 +1,46 @@
+{
+  "personal_info": {
+    "name": "Bunty Chauhan",
+    "email": "buntychauhan1464@gmail.com",
+    "linkedin": "",
+    "github": "https://github.com/ninja1464"
+  },
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "AWS",
+    "Flask",
+    "Docker",
+    "PostgreSQL",
+    "NumPy",
+    "Pandas",
+    "Scikit-Learn",
+    "Data Analysis",
+    "Linux",
+    "Git"
+  ],
+  "experience": [
+    {
+      "title": "AI & Machine Learning Projects",
+      "company": "Academic & Personal Projects",
+      "bullets": [
+        "Built regression and classification models using Scikit-Learn with feature engineering and hyperparameter tuning",
+        "Performed data cleaning, EDA, and visualization using Pandas and Matplotlib",
+        "Deployed Flask-based ML applications integrated with AWS EC2",
+        "Implemented clustering algorithms and evaluated performance using cross-validation techniques"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. Artificial Intelligence",
+      "institution": "SRH University, Germany",
+      "year": "2025 – Ongoing"
+    },
+    {
+      "degree": "B.E. Computer Science",
+      "institution": "Chandigarh University",
+      "year": "2019 – 2023"
+    }
+  ]
+}

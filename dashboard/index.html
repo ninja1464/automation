@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BuntyApplyAI Dashboard</title>
+</head>
+
+<body>
+    <h1>BuntyApplyAI</h1>
+
+    <textarea id="jobText" rows="10" cols="80" placeholder="Paste job description here"></textarea>
+    <br><br>
+
+    <button onclick="analyze()">Analyze Job</button>
+    <button onclick="generate()">Generate Resume</button>
+
+    <h2>Result:</h2>
+    <pre id="result"></pre>
+
+    <script>
+        async function analyze() {
+            const jobText = document.getElementById("jobText").value;
+
+            const response = await fetch("http://127.0.0.1:8000/analyze", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ job_text: jobText })
+            });
+
+            const data = await response.json();
+            document.getElementById("result").innerText = JSON.stringify(data, null, 2);
+        }
+
+        async function generate() {
+            const jobText = document.getElementById("jobText").value;
+
+            const response = await fetch("http://127.0.0.1:8000/generate_resume", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ job_text: jobText })
+            });
+
+            const data = await response.json();
+            document.getElementById("result").innerText = JSON.stringify(data, null, 2);
+        }
+    </script>
+
+</body>
+
+</html>
